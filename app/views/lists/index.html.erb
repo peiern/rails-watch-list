@@ -2,10 +2,10 @@
   <h1>Your lists</h1>
     <div class="cards">
       <% @lists.each do |list| %>
-        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-          <%= link_to list.name, list_path(list) %>
+        <div class="card-category" style="background-image: linear-gradient(to right, rgba(132,87,223,1), rgba(218,123,76,1))">
+          <%= link_to list.name, list_path(list), class:"text-white"%>
         </div>
       <% end %>
   </div>
-  <%= link_to 'Create new list' , new_list_path %>
+  <%= link_to 'Create new list' , new_list_path, class:"btn btn-outline-dark mt-3" %>
 </div>
