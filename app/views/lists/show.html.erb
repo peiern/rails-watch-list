@@ -5,4 +5,5 @@
   <p><%= bookmark.comment %></p>
 <% end %>
 
-<%= link_to 'Add a new bookmark', new_list_bookmark_path(@list) %>
+<%= link_to 'Add a new bookmark comment', new_list_bookmark_path(@list), class:"btn btn-outline-dark mt-3"  %>
+<%= link_to 'Back to list', lists_path, class:"btn btn-outline-dark mt-3"  %>

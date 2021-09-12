@@ -1,0 +1,4 @@
+
+<% @bookmarks.each do | bookmark | %>
+  <%= link_to bookmark.comment, bookmark_path(bookmark) %>
+<% end %>
