@@ -2,6 +2,7 @@
 <h2>Movies</h2>
   <% @movies.each do | movie | %>
     <%= movie.title %>
+    <%= movie.poster_url %>
   <% end %>
   <br>
   <%= link_to 'Show my list' , lists_path, class:"btn btn-outline-dark mt-3" %>
