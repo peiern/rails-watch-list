@@ -1,6 +1,7 @@
 <div class="container m-3">
   <%= simple_form_for [ @list ] do |f| %>
     <%= f.input :name %>
+    <%= f.input :card_photo, as: :file %>
     <%= f.submit "Create list", class: "btn btn-outline-primary" %>
   <% end %>
 </div>

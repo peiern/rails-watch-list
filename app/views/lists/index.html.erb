@@ -2,7 +2,7 @@
   <h1>Your lists</h1>
     <div class="cards">
       <% @lists.each do |list| %>
-        <div class="card-category" style="background-image: linear-gradient(to right, rgba(132,87,223,1), rgba(218,123,76,1))">
+        <div class="card-category" style="background-image: linear-gradient(to right, rgba(132,87,223,1), rgba(218,123,76,1)), url ('<%= cl_image_path list.card_photo.key, height: 300, crop: :fill %>')">
           <%= link_to list.name, list_path(list), class:"text-white"%>
         </div>
       <% end %>

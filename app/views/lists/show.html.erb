@@ -3,6 +3,7 @@
 <h4>Bookmark comments:</h4>
 <% @bookmarks.each do |bookmark| %>
   <p><%= bookmark.comment %></p>
+  <%= cl_image_tag @list.card_photo.key, height: 300, width: 400, crop: :fill %>
 <% end %>
 
 <%= link_to 'Add a new bookmark comment', new_list_bookmark_path(@list), class:"btn btn-outline-dark mt-3"  %>
