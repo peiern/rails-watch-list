@@ -1,10 +1,11 @@
 <div class="m-3">
-<h2>Movies</h2>
-  <% @movies.each do | movie | %>
-    <%= image_tag movie.poster_url, width: 200 %>
-    <%= movie.title %>
-  <% end %>
-  <br>
-  <%= link_to 'Show my list' , lists_path, class:"btn btn-outline-dark mt-3" %>
-
+  <h2>Movies</h2>
+    <div class="card" style="width: 18rem;">
+      <% @movies.each do | movie | %>
+        <%= image_tag movie.poster_url, class:"card-img-top"%>
+        <%= movie.title %>
+      <% end %>
+      <br>
+    </div>
+      <%= link_to 'Show my list' , lists_path, class:"btn btn-outline-dark mt-3" %>
 </div>
