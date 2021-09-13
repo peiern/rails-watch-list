@@ -1,8 +1,8 @@
 <div class="m-3">
 <h2>Movies</h2>
   <% @movies.each do | movie | %>
+    <%= image_tag movie.poster_url, width: 200 %>
     <%= movie.title %>
-    <%= movie.poster_url %>
   <% end %>
   <br>
   <%= link_to 'Show my list' , lists_path, class:"btn btn-outline-dark mt-3" %>
