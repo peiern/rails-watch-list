@@ -1,5 +1,6 @@
 <div class="m-3">
   <h2>Movies</h2>
+  <div class="cards">
     <div class="card" style="width: 18rem;">
       <% @movies.each do | movie | %>
         <%= image_tag movie.poster_url, class:"card-img-top"%>
@@ -7,5 +8,6 @@
       <% end %>
       <br>
     </div>
+  </div>
       <%= link_to 'Show my list' , lists_path, class:"btn btn-outline-dark mt-3" %>
 </div>
